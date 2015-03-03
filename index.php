@@ -3,13 +3,7 @@
    if(file_exists('connectionDB.php')) include 'connectionDB.php';
 
    if(isset($_COOKIE['tokentestassignment'])){
-      $token = $_COOKIE['tokentestassignment'];
-      $tokenQuery = mysql_query("select * from `sessions` where Token = '$token'")
-         or die(mysql_error());
-      while($resToken = mysql_fetch_array($tokenQuery)){
-         $_SESSION['name'] = $resToken['Name'];
-         header('Location: map.php');
-      }
+      header('Location: map.php');
    }
 ?>
 <!DOCTYPE html>

@@ -8,10 +8,8 @@
       $token = $_COOKIE['tokentestassignment'];
       $tokenQuery = mysql_query("select * from `sessions` where Token = '$token'")
          or die(mysql_error());
-      while($resToken = mysql_fetch_array($tokenQuery)){
-         $_SESSION['name'] = $resToken['Name'];
-         $_SESSION['googleId'] = $resToken['GoogleId'];
-      }
+      $_SESSION['name'] = mysql_result($tokenQuery,0,1);
+      $_SESSION['googleId'] = mysql_result($tokenQuery,0,2);
    }
 
    if(file_exists('connectionDB.php')) include 'connectionDB.php';
