@@ -49,24 +49,20 @@
    </body>
 </html>
 <style type="text/css">
+   body {
+      background: url(img/map.png);
+      background-size: 100% ;
+      background-repeat: no-repeat;
+   }
+   footer{
+      color: #ECF0F1;
+      bottom: 0;
+      left: 15px;
+      position: fixed;
+   }
    .googleBtn{
       color: #fff;
       background-color: #dd4b39;
       margin-top: -15px;
-   }
-   body {
-    background: url(img/map.png);
-    background-size: 100% ;
-    background-repeat: no-repeat;
-   }
-   footer{
-   /* background-color: #111111;*/
-       /*background-color: rgba(0,0,0,0.4);*/
-       color: #5a5a5a;
-      bottom: 0;
-   /* box-shadow: 0 -1px 2px rgba(0,0,0,0.4);*/
-   /* height: 45px;*/
-      left: 10px;
-      position: fixed;
    }
 </style>
