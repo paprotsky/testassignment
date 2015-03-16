@@ -23,9 +23,9 @@
          <div class="container">
             <div class="pull-right"><br>
                <?php
-                  $client_id = '911744139194-dfg34b5nglna16c3t1f7k40oq4s5a8dd.apps.googleusercontent.com'; // Client ID
-                  $client_secret = '8oVBldxeFVrpJTI15RLGrbTm'; // Client secret
-                  $redirect_uri = 'http://testassignment.com/oauth2callback.php'; // Redirect URI
+                  $client_id = '911744139194-vdvvodha06dsj9fbg81g3s1osii2ccd0.apps.googleusercontent.com'; // Client ID
+                  $client_secret = 'c2taLQJXjm3NoyRu9AsXWgHZ'; // Client secret
+                  $redirect_uri = 'http://testassignment.zaladmin.com/oauth2callback.php'; // Redirect URI
 
                   $url = 'https://accounts.google.com/o/oauth2/auth';
 
